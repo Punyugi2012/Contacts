@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     
     func foo() {
         print("Hello World")
+        print("Hello")
     }
 
 
