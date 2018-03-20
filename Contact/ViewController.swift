@@ -11,8 +11,15 @@ import Alamofire
 
 class ViewController: UIViewController {
 
+    func feedData() {
+        Alamofire.request("https://jsonplaceholder.typicode.com/users").responseJSON { (response) in
+            print(response.result.value!)
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.feedData()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
